@@ -161,6 +161,9 @@
 			"path" : "C:/ElknirPrograms/LogicielsTravail/JetBrains/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
 		},
 		{
+			"path" : "opengl-framework/lib/img/CMakeLists.txt"
+		},
+		{
 			"path" : "opengl-framework/lib/exe_path/CMakeLists.txt"
 		},
 		{

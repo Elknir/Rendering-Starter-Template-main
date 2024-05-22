@@ -47,11 +47,11 @@ cmake_ninja_workdir = C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-
 #############################################
 # Order-only phony target for TPs-Rendering
 
-build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_opengl_framework timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 timestamp_2a2ac6ad95dc7061c2625b431bb20079 timestamp_854d03edc8e85dece913887cf911a0d3
+build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 timestamp_2a2ac6ad95dc7061c2625b431bb20079 timestamp_854d03edc8e85dece913887cf911a0d3 timestamp_897c5761b45da5dbb76445146109d2e8
 
 build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\src\main.cpp || cmake_object_order_depends_target_TPs-Rendering
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\src -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\src -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:W0
   OBJECT_DIR = CMakeFiles\TPs-Rendering.dir
   OBJECT_FILE_DIR = CMakeFiles\TPs-Rendering.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\TPs-Rendering.dir\
@@ -65,10 +65,10 @@ build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering
 #############################################
 # Link the executable TPs-Rendering.exe
 
-build TPs-Rendering.exe: CXX_EXECUTABLE_LINKER__TPs-Rendering_Debug CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj | opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build TPs-Rendering.exe: CXX_EXECUTABLE_LINKER__TPs-Rendering_Debug CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj | opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = opengl-framework\opengl_framework.lib  opengl-framework\glad.lib  opengl-framework\lib\exe_path\exe_path.lib  opengl-framework\lib\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = opengl-framework\opengl_framework.lib  opengl-framework\glad.lib  opengl-framework\lib\img\img.lib  opengl-framework\lib\img\stb_image.lib  opengl-framework\lib\exe_path\exe_path.lib  opengl-framework\lib\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\TPs-Rendering.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -134,7 +134,7 @@ build install\local: phony CMakeFiles\install\local.util
 #############################################
 # Custom command for timestamp_2a2ac6ad95dc7061c2625b431bb20079
 
-build timestamp_2a2ac6ad95dc7061c2625b431bb20079 | ${cmake_ninja_workdir}timestamp_2a2ac6ad95dc7061c2625b431bb20079: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\.gitkeep || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_2a2ac6ad95dc7061c2625b431bb20079 | ${cmake_ninja_workdir}timestamp_2a2ac6ad95dc7061c2625b431bb20079: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\.gitkeep || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_2a2ac6ad95dc7061c2625b431bb20079 && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/.gitkeep C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/.gitkeep"
   DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/.gitkeep" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/.gitkeep"
   restat = 1
@@ -143,16 +143,25 @@ build timestamp_2a2ac6ad95dc7061c2625b431bb20079 | ${cmake_ninja_workdir}timesta
 #############################################
 # Custom command for timestamp_854d03edc8e85dece913887cf911a0d3
 
-build timestamp_854d03edc8e85dece913887cf911a0d3 | ${cmake_ninja_workdir}timestamp_854d03edc8e85dece913887cf911a0d3: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_854d03edc8e85dece913887cf911a0d3 | ${cmake_ninja_workdir}timestamp_854d03edc8e85dece913887cf911a0d3: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_854d03edc8e85dece913887cf911a0d3 && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/fragment.glsl C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/fragment.glsl"
   DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/fragment.glsl" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/fragment.glsl"
   restat = 1
 
 
 #############################################
+# Custom command for timestamp_897c5761b45da5dbb76445146109d2e8
+
+build timestamp_897c5761b45da5dbb76445146109d2e8 | ${cmake_ninja_workdir}timestamp_897c5761b45da5dbb76445146109d2e8: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\texture.png || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_897c5761b45da5dbb76445146109d2e8 && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/texture.png C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/texture.png"
+  DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/texture.png" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/texture.png"
+  restat = 1
+
+
+#############################################
 # Custom command for timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4
 
-build timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 | ${cmake_ninja_workdir}timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\vertex.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\opengl_framework.lib
+build timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 | ${cmake_ninja_workdir}timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\vertex.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/vertex.glsl C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/vertex.glsl"
   DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/vertex.glsl" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/vertex.glsl"
   restat = 1
@@ -169,11 +178,11 @@ build timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 | ${cmake_ninja_workdir}timesta
 #############################################
 # Order-only phony target for opengl_framework
 
-build cmake_object_order_depends_target_opengl_framework: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_opengl_framework: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_stb_image
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\Camera.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -181,7 +190,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj: CXX_C
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\Mesh.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\RenderTarget.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\RenderTarget.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -189,7 +206,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj: CXX_COM
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\Shader.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\Texture.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\Texture.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -197,7 +222,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj: CXX_C
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\handle_error.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -205,7 +230,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj:
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\make_absolute_path.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -213,7 +238,15 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cp
 
 build opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\opengl-framework.cpp || cmake_object_order_depends_target_opengl_framework
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
-  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
+  OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
+  OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
+  TARGET_PDB = opengl-framework\opengl_framework.pdb
+
+build opengl-framework\CMakeFiles\opengl_framework.dir\src\tinyobjloader.cpp.obj: CXX_COMPILER__opengl_framework_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\src\tinyobjloader.cpp || cmake_object_order_depends_target_opengl_framework
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\tinyobjloader -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm -IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glad\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\include -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\include -external:W0
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
   OBJECT_FILE_DIR = opengl-framework\CMakeFiles\opengl_framework.dir\src
   TARGET_COMPILE_PDB = opengl-framework\CMakeFiles\opengl_framework.dir\opengl_framework.pdb
@@ -227,7 +260,7 @@ build opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.
 #############################################
 # Link the static library opengl-framework\opengl_framework.lib
 
-build opengl-framework\opengl_framework.lib: CXX_STATIC_LIBRARY_LINKER__opengl_framework_Debug opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib
+build opengl-framework\opengl_framework.lib: CXX_STATIC_LIBRARY_LINKER__opengl_framework_Debug opengl-framework\CMakeFiles\opengl_framework.dir\src\Camera.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Mesh.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\RenderTarget.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Shader.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\Texture.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\handle_error.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\make_absolute_path.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\opengl-framework.cpp.obj opengl-framework\CMakeFiles\opengl_framework.dir\src\tinyobjloader.cpp.obj || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = opengl-framework\CMakeFiles\opengl_framework.dir
@@ -453,6 +486,148 @@ build opengl-framework\lib\glm\glm\CMakeFiles\install\local.util: CUSTOM_COMMAND
   restat = 1
 
 build opengl-framework\lib\glm\glm\install\local: phony opengl-framework\lib\glm\glm\CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target img
+
+
+#############################################
+# Order-only phony target for img
+
+build cmake_object_order_depends_target_img: phony || cmake_object_order_depends_target_stb_image
+
+build opengl-framework\lib\img\CMakeFiles\img.dir\src\Load.cpp.obj: CXX_COMPILER__img_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\src\Load.cpp || cmake_object_order_depends_target_img
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:W0
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\img.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+build opengl-framework\lib\img\CMakeFiles\img.dir\src\Save.cpp.obj: CXX_COMPILER__img_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\src\Save.cpp || cmake_object_order_depends_target_img
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /W4
+  INCLUDES = -external:IC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib -external:W0
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\img.dir\src
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target img
+
+
+#############################################
+# Link the static library opengl-framework\lib\img\img.lib
+
+build opengl-framework\lib\img\img.lib: CXX_STATIC_LIBRARY_LINKER__img_Debug opengl-framework\lib\img\CMakeFiles\img.dir\src\Load.cpp.obj opengl-framework\lib\img\CMakeFiles\img.dir\src\Save.cpp.obj || opengl-framework\lib\img\stb_image.lib
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\img.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\img.dir\img.pdb
+  TARGET_FILE = opengl-framework\lib\img\img.lib
+  TARGET_PDB = opengl-framework\lib\img\img.pdb
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target stb_image
+
+
+#############################################
+# Order-only phony target for stb_image
+
+build cmake_object_order_depends_target_stb_image: phony || opengl-framework\lib\img\CMakeFiles\stb_image.dir
+
+build opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib\stb_image\stb_image.cpp || cmake_object_order_depends_target_stb_image
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+build opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image_write.cpp.obj: CXX_COMPILER__stb_image_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\lib\stb_image\stb_image_write.cpp || cmake_object_order_depends_target_stb_image
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  OBJECT_FILE_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target stb_image
+
+
+#############################################
+# Link the static library opengl-framework\lib\img\stb_image.lib
+
+build opengl-framework\lib\img\stb_image.lib: CXX_STATIC_LIBRARY_LINKER__stb_image_Debug opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image.cpp.obj opengl-framework\lib\img\CMakeFiles\stb_image.dir\lib\stb_image\stb_image_write.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = opengl-framework\lib\img\CMakeFiles\stb_image.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = opengl-framework\lib\img\CMakeFiles\stb_image.dir\stb_image.pdb
+  TARGET_FILE = opengl-framework\lib\img\stb_image.lib
+  TARGET_PDB = opengl-framework\lib\img\stb_image.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build opengl-framework\lib\img\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\opengl-framework\lib\img && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build opengl-framework\lib\img\edit_cache: phony opengl-framework\lib\img\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build opengl-framework\lib\img\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\opengl-framework\lib\img && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main -BC:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\rebuild_cache: phony opengl-framework\lib\img\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build opengl-framework\lib\img\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build opengl-framework\lib\img\CMakeFiles\install.util: CUSTOM_COMMAND opengl-framework\lib\img\all
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\opengl-framework\lib\img && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\install: phony opengl-framework\lib\img\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build opengl-framework\lib\img\CMakeFiles\install\local.util: CUSTOM_COMMAND opengl-framework\lib\img\all
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\opengl-framework\lib\img && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build opengl-framework\lib\img\install\local: phony opengl-framework\lib\img\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -910,9 +1085,17 @@ build glfw: phony opengl-framework\lib\glfw\src\glfw3.lib
 
 build glfw3.lib: phony opengl-framework\lib\glfw\src\glfw3.lib
 
+build img: phony opengl-framework\lib\img\img.lib
+
+build img.lib: phony opengl-framework\lib\img\img.lib
+
 build opengl_framework: phony opengl-framework\opengl_framework.lib
 
 build opengl_framework.lib: phony opengl-framework\opengl_framework.lib
+
+build stb_image: phony opengl-framework\lib\img\stb_image.lib
+
+build stb_image.lib: phony opengl-framework\lib\img\stb_image.lib
 
 build uninstall: phony opengl-framework\lib\glm\uninstall
 
@@ -933,7 +1116,7 @@ build all: phony TPs-Rendering.exe opengl-framework\all
 #############################################
 # Folder: C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework
 
-build opengl-framework\all: phony opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\glm\all opengl-framework\lib\exe_path\all opengl-framework\lib\glfw\all
+build opengl-framework\all: phony opengl-framework\opengl_framework.lib opengl-framework\glad.lib opengl-framework\lib\glm\all opengl-framework\lib\img\all opengl-framework\lib\exe_path\all opengl-framework\lib\glfw\all
 
 # =============================================================================
 
@@ -971,6 +1154,13 @@ build opengl-framework\lib\glm\all: phony opengl-framework\lib\glm\glm\all
 build opengl-framework\lib\glm\glm\all: phony
 
 # =============================================================================
+
+#############################################
+# Folder: C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img
+
+build opengl-framework\lib\img\all: phony opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib
+
+# =============================================================================
 # Built-in targets
 
 
@@ -991,14 +1181,14 @@ build C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Re
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\cmake.verify_globs | C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindThreads.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\cmake.verify_globs | C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindThreads.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\CMakeLists.txt CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindThreads.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\glm\CMakeLists.txt CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake: phony
+build C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio\CMakeFiles\VerifyGlobs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeDependentOption.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckIncludeFile.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\CheckLibraryExists.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindPackageMessage.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\FindThreads.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\GNUInstallDirs.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\CMakeUtils\files_and_folders.cmake C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\exe_path\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3.pc.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\CMake\glfw3Config.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glfw\src\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\cmake\cmake_uninstall.cmake.in C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\glm\glm\CMakeLists.txt C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\opengl-framework\lib\img\CMakeLists.txt CMakeCache.txt CMakeFiles\3.28.1\CMakeCCompiler.cmake CMakeFiles\3.28.1\CMakeCXXCompiler.cmake CMakeFiles\3.28.1\CMakeRCCompiler.cmake CMakeFiles\3.28.1\CMakeSystem.cmake: phony
 
 
 #############################################

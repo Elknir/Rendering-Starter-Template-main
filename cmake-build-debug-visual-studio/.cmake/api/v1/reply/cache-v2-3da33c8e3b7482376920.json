@@ -991,7 +991,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "8"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1658,6 +1658,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "WARNINGS_AS_ERRORS_FOR_IMG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "ON iff you want to treat warnings as errors"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "WARNINGS_AS_ERRORS_FOR_OPENGL_FRAMEWORK",
 			"properties" : 
 			[
@@ -1716,6 +1728,18 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/glm"
+		},
+		{
+			"name" : "img_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;stb_image;"
 		}
 	],
 	"kind" : "cache",

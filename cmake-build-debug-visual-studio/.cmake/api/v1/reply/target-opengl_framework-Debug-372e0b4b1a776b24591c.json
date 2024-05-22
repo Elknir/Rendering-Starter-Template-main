@@ -51,19 +51,31 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 40,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -75,7 +87,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 82,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -87,7 +99,7 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 74,
+				"line" : 77,
 				"parent" : 0
 			}
 		]
@@ -101,14 +113,18 @@
 					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"fragment" : "/W4"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
+					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/tinyobjloader"
+				},
+				{
+					"backtrace" : 8,
 					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/glm"
 				},
 				{
@@ -116,7 +132,7 @@
 					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/glfw/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"isSystem" : true,
 					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/include"
 				},
@@ -128,6 +144,16 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
+					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/img/include"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/img/lib"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/exe_path/include"
 				}
 			],
@@ -136,8 +162,8 @@
 			{
 				"backtraces" : 
 				[
-					8,
-					3
+					10,
+					5
 				],
 				"standard" : "20"
 			},
@@ -146,9 +172,12 @@
 				0,
 				3,
 				5,
-				8,
-				10,
-				12
+				7,
+				9,
+				12,
+				14,
+				16,
+				17
 			]
 		}
 	],
@@ -160,11 +189,19 @@
 		},
 		{
 			"backtrace" : 3,
-			"id" : "exe_path::@4733f89c039058117c03"
+			"id" : "img::@d51e3b7203d9003fae2a"
 		},
 		{
 			"backtrace" : 4,
 			"id" : "glfw::@f5cc38a58c92ad250bdb"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "exe_path::@4733f89c039058117c03"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "stb_image::@d51e3b7203d9003fae2a"
 		}
 	],
 	"id" : "opengl_framework::@df116619b2487fa10f3e",
@@ -184,9 +221,12 @@
 				0,
 				3,
 				5,
-				8,
-				10,
-				12
+				7,
+				9,
+				12,
+				14,
+				16,
+				17
 			]
 		},
 		{
@@ -197,83 +237,113 @@
 				2,
 				4,
 				6,
-				7,
-				9,
-				11
+				8,
+				10,
+				11,
+				13,
+				15
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/Camera.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/Camera.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/EventsCallbacks.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/Mesh.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/Mesh.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "opengl-framework/src/RenderTarget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "opengl-framework/src/RenderTarget.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/Shader.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/Shader.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "opengl-framework/src/Texture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "opengl-framework/src/Texture.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/glfw.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/handle_error.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/handle_error.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/make_absolute_path.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"path" : "opengl-framework/src/make_absolute_path.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 9,
+			"backtrace" : 11,
 			"compileGroupIndex" : 0,
 			"path" : "opengl-framework/src/opengl-framework.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "opengl-framework/src/tinyobjloader.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

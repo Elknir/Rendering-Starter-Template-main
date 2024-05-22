@@ -22,6 +22,13 @@ C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/glm/glm/CMakeFiles/list_install_components.dir
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/glm/glm/CMakeFiles/install.dir
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/glm/glm/CMakeFiles/install/local.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/img.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/stb_image.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/edit_cache.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/rebuild_cache.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/list_install_components.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/install.dir
+C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/img/CMakeFiles/install/local.dir
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/exe_path/CMakeFiles/exe_path.dir
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/exe_path/CMakeFiles/edit_cache.dir
 C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/opengl-framework/lib/exe_path/CMakeFiles/rebuild_cache.dir

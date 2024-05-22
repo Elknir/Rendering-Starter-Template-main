@@ -28,7 +28,8 @@
 					[
 						2,
 						4,
-						5
+						5,
+						6
 					],
 					"jsonFile" : "directory-opengl-framework-Debug-a5556fecd5c10c74f63a.json",
 					"minimumCMakeVersion" : 
@@ -41,7 +42,7 @@
 					"targetIndexes" : 
 					[
 						2,
-						4
+						5
 					]
 				},
 				{
@@ -60,7 +61,7 @@
 					"source" : "opengl-framework/lib/glm",
 					"targetIndexes" : 
 					[
-						5
+						7
 					]
 				},
 				{
@@ -73,6 +74,22 @@
 					"parentIndex" : 2,
 					"projectIndex" : 1,
 					"source" : "opengl-framework/lib/glm/glm"
+				},
+				{
+					"build" : "opengl-framework/lib/img",
+					"jsonFile" : "directory-opengl-framework.lib.img-Debug-f3c966a4635734f71921.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "opengl-framework/lib/img",
+					"targetIndexes" : 
+					[
+						4,
+						6
+					]
 				},
 				{
 					"build" : "opengl-framework/lib/exe_path",
@@ -93,7 +110,7 @@
 					"build" : "opengl-framework/lib/glfw",
 					"childIndexes" : 
 					[
-						6
+						7
 					],
 					"jsonFile" : "directory-opengl-framework.lib.glfw-Debug-142bec555596b5f5a975.json",
 					"minimumCMakeVersion" : 
@@ -111,13 +128,13 @@
 					{
 						"string" : "3.4"
 					},
-					"parentIndex" : 5,
+					"parentIndex" : 6,
 					"projectIndex" : 2,
 					"source" : "opengl-framework/lib/glfw/src",
 					"targetIndexes" : 
 					[
 						3,
-						6
+						8
 					]
 				}
 			],
@@ -134,7 +151,8 @@
 					[
 						0,
 						1,
-						4
+						4,
+						5
 					],
 					"name" : "TPs-Rendering",
 					"targetIndexes" : 
@@ -142,7 +160,9 @@
 						0,
 						1,
 						2,
-						4
+						4,
+						5,
+						6
 					]
 				},
 				{
@@ -155,21 +175,21 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5
+						7
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						5,
-						6
+						6,
+						7
 					],
 					"name" : "GLFW",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						3,
-						6
+						8
 					]
 				}
 			],
@@ -178,12 +198,12 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TPs-Rendering::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TPs-Rendering-Debug-5c0d62ec59aa4c2c4908.json",
+					"jsonFile" : "target-TPs-Rendering-Debug-99b6117f9f5a39346ba1.json",
 					"name" : "TPs-Rendering",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 4,
+					"directoryIndex" : 5,
 					"id" : "exe_path::@4733f89c039058117c03",
 					"jsonFile" : "target-exe_path-Debug-bc230581981879097d69.json",
 					"name" : "exe_path",
@@ -197,17 +217,31 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 6,
+					"directoryIndex" : 7,
 					"id" : "glfw::@f5cc38a58c92ad250bdb",
 					"jsonFile" : "target-glfw-Debug-7b0a467dff75b851c189.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
+					"directoryIndex" : 4,
+					"id" : "img::@d51e3b7203d9003fae2a",
+					"jsonFile" : "target-img-Debug-bc9a3dae3d948b2706c2.json",
+					"name" : "img",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 1,
 					"id" : "opengl_framework::@df116619b2487fa10f3e",
-					"jsonFile" : "target-opengl_framework-Debug-01cc095a4aad743ed56d.json",
+					"jsonFile" : "target-opengl_framework-Debug-372e0b4b1a776b24591c.json",
 					"name" : "opengl_framework",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "stb_image::@d51e3b7203d9003fae2a",
+					"jsonFile" : "target-stb_image-Debug-d8078e7b2fd829143ef1.json",
+					"name" : "stb_image",
 					"projectIndex" : 0
 				},
 				{
@@ -218,7 +252,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 6,
+					"directoryIndex" : 7,
 					"id" : "update_mappings::@f5cc38a58c92ad250bdb",
 					"jsonFile" : "target-update_mappings-Debug-58e2d6350afb629c13f7.json",
 					"name" : "update_mappings",
