@@ -4,8 +4,8 @@
 #include "glm/ext/matrix_clip_space.hpp"
 #include "glm/ext/matrix_transform.hpp"
 
+// Initialisation
 int main() {
-    // Initialisation
     gl::init("TPs de Rendering"); // On crée une fenêtre et on choisit son nom
     gl::maximize_window(); // On peut la maximiser si on veut
 
@@ -18,45 +18,68 @@ int main() {
 //                           0.f, 1.f  // Position2D du 3ème sommet
 //                           },}},}};
 
-    auto const rectangle_mesh = gl::Mesh{{
-        .vertex_buffers = {{
-            
-            .layout = {gl::VertexAttribute::Position3D{0}, gl::VertexAttribute::UV{1}},
-            .data   = {
-                    -0.5f, -0.5f,-0.5f, 0, 0, // Position2D du sommet 0
-                    0.5f, -0.5f,-0.5f, 1, 0, // Position2D du sommet 1
-                    0.5f, 0.5f,-0.5f, 1, 1, // Position2D du sommet 2
-                    -0.5f, 0.5f, -0.5f, 0, 1, // Position2D du sommet 3
 
-                    -0.5f, -0.5f,0.5f,  0, 0,// Position2D du sommet 4
-                    0.5f, -0.5f,0.5f,  1, 0,// Position2D du sommet 5
-                    0.5f, 0.5f,0.5f, 1, 1, // Position2D du sommet 6
-                    -0.5f, 0.5f,0.5f, 0, 1,// Position2D du sommet 7
-                    },
-                    }},
-                    .index_buffer   = {
-                0, 1, 2, 
-                0, 2, 3, // 1ere face 
-                0, 1, 5,
-                0, 4, 5, // 2eme face
-                1, 2, 5,
-                2, 5, 6, // 3eme face
-                2, 3, 6,
-                3, 6, 7, // 4eme face
-                3, 4, 7,
-                0, 3, 4, // 5eme face
-                4, 5, 6,
-                4, 6, 7, // 6eme face
-                },
-                }
-                
-    };
+    //MON CUBE
+    auto const rectangle_mesh = gl::Mesh{{
+            .vertex_buffers = {{
+                   .layout = {gl::VertexAttribute::Position3D{0}, gl::VertexAttribute::UV{1}, gl::VertexAttribute::Normal3D{2}},
+                   .data   = {
+                           // Positions            // UVs         // Normales
+                           // Face gauche
+                           -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
+                           -1.0f, -1.0f,  1.0f,    1.0f, 0.0f,   -1.0f,  0.0f,  0.0f,
+                           -1.0f,  1.0f,  1.0f,    1.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
+                           -1.0f,  1.0f, -1.0f,    0.0f, 1.0f,   -1.0f,  0.0f,  0.0f,
+
+                           // Face droite
+                           1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    1.0f,  0.0f,  0.0f,
+                           1.0f, -1.0f,  1.0f,    1.0f, 0.0f,    1.0f,  0.0f,  0.0f,
+                           1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    1.0f,  0.0f,  0.0f,
+                           1.0f,  1.0f, -1.0f,    0.0f, 1.0f,    1.0f,  0.0f,  0.0f,
+
+                           // Face arrière
+                           -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+                           1.0f, -1.0f, -1.0f,    1.0f, 0.0f,    0.0f,  0.0f, -1.0f,
+                           1.0f,  1.0f, -1.0f,    1.0f, 1.0f,    0.0f,  0.0f, -1.0f,
+                           -1.0f,  1.0f, -1.0f,    0.0f, 1.0f,    0.0f,  0.0f, -1.0f,
+
+                           // Face avant
+                           -1.0f, -1.0f,  1.0f,    0.0f, 0.0f,    0.0f,  0.0f,  1.0f,
+                           1.0f, -1.0f,  1.0f,    1.0f, 0.0f,    0.0f,  0.0f,  1.0f,
+                           1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+                           -1.0f,  1.0f,  1.0f,    0.0f, 1.0f,    0.0f,  0.0f,  1.0f,
+
+                           // Face du bas
+                           -1.0f, -1.0f, -1.0f,    0.0f, 0.0f,    0.0f, -1.0f,  0.0f,
+                           1.0f, -1.0f, -1.0f,    1.0f, 0.0f,    0.0f, -1.0f,  0.0f,
+                           1.0f, -1.0f,  1.0f,    1.0f, 1.0f,    0.0f, -1.0f,  0.0f,
+                           -1.0f, -1.0f,  1.0f,    0.0f, 1.0f,    0.0f, -1.0f,  0.0f,
+
+                           // Face du haut
+                           -1.0f,  1.0f, -1.0f,    0.0f, 0.0f,    0.0f,  1.0f,  0.0f,
+                           1.0f,  1.0f, -1.0f,    1.0f, 0.0f,    0.0f,  1.0f,  0.0f,
+                           1.0f,  1.0f,  1.0f,    1.0f, 1.0f,    0.0f,  1.0f,  0.0f,
+                           -1.0f,  1.0f,  1.0f,    0.0f, 1.0f,    0.0f,  1.0f,  0.0f
+                   },
+            }},
+            .index_buffer   = {
+                    // Indices pour chaque face
+                    0, 1, 2,  0, 2, 3,    // Face gauche
+                    4, 5, 6,  4, 6, 7,    // Face droite
+                    8, 9, 10, 8, 10,11,   // Face arrière
+                    12,13,14, 12,14,15,   // Face avant
+                    16,17,18, 16,18,19,   // Face du bas
+                    20,21,22, 20,22,23    // Face du haut
+            }
+    }};
 
     auto const shader = gl::Shader{{
         .vertex   = gl::ShaderSource::File{"res/vertex.glsl"},
         .fragment = gl::ShaderSource::File{"res/fragment.glsl"},
         }};
 
+
+    //CAMERA
     auto camera = gl::Camera{};
     gl::set_events_callbacks({
         camera.events_callbacks(),
@@ -66,16 +89,12 @@ int main() {
                 },
         },
     });
-
-    glm::mat4 const projection_matrix =
-            glm::infinitePerspective(2.f /*field of view in radians*/,
-                                     gl::framebuffer_aspect_ratio() /*aspect ratio*/,
-                                     0.001f /*near plane*/);
-
     glm::mat4 const rotation = glm::rotate(glm::mat4{1.f}, gl::time_in_seconds() /*angle de la rotation*/, glm::vec3{1.f, 1.f, 1.f} /* axe autour duquel on tourne */);
     glm::mat4 const translation = glm::translate(glm::mat4{1.f}, glm::vec3{0.f, 1.f, 0.f} /* déplacement */);
     glm::mat4 const rotationTranslation =  translation * rotation ;
 
+    
+    //TEXTURE
     auto const texture = gl::Texture{
             gl::TextureSource::File{ // Peut être un fichier, ou directement un tableau de pixels
                     .path           = "res/texture.png",
@@ -90,18 +109,86 @@ int main() {
             }
     };
 
+    
+    //POST PROCESS
+    auto render_target = gl::RenderTarget{gl::RenderTarget_Descriptor{
+            .width          = gl::framebuffer_width_in_pixels(),
+            .height         = gl::framebuffer_height_in_pixels(),
+            .color_textures = {
+                    gl::ColorAttachment_Descriptor{
+                            .format  = gl::InternalFormat_Color::RGBA8,
+                            .options = {
+                                    .minification_filter  = gl::Filter::NearestNeighbour, // On va toujours afficher la texture à la taille de l'écran,
+                                    .magnification_filter = gl::Filter::NearestNeighbour, // donc les filtres n'auront pas d'effet. Tant qu'à faire on choisit le moins coûteux.
+                                    .wrap_x               = gl::Wrap::ClampToEdge,
+                                    .wrap_y               = gl::Wrap::ClampToEdge,
+                            },
+                    },
+            },
+            .depth_stencil_texture = gl::DepthStencilAttachment_Descriptor{
+                    .format  = gl::InternalFormat_DepthStencil::Depth32F,
+                    .options = {
+                            .minification_filter  = gl::Filter::NearestNeighbour,
+                            .magnification_filter = gl::Filter::NearestNeighbour,
+                            .wrap_x               = gl::Wrap::ClampToEdge,
+                            .wrap_y               = gl::Wrap::ClampToEdge,
+                    },
+            },
+    }};
 
+    gl::set_events_callbacks({
+        camera.events_callbacks(),
+            {.on_framebuffer_resized = [&](gl::FramebufferResizedEvent const& e) {
+                render_target.resize(e.width_in_pixels, e.height_in_pixels);
+            }
+        },
+    });
+
+    auto const postProcess = gl::Mesh{{ .vertex_buffers = {{
+        .layout = {gl::VertexAttribute::Position2D {
+            0 },gl::VertexAttribute::UV{1}},
+            .data   = {-1.f,-1.f, 0, 0,
+                       1.f,-1.f, 1, 0,
+                       -1.f, 1.f, 0, 1,
+                       1.f, 1.f, 1, 1,
+                       },
+                   }},
+            .index_buffer = {
+                    0, 1, 2,
+                    1, 2, 3, 
+            }
+    }};
+
+
+    auto const shaderPostProcess = gl::Shader{{
+        .vertex   = gl::ShaderSource::File{"res/post_process_vertex.glsl"},
+        .fragment = gl::ShaderSource::File{"res/post_process_fragment.glsl"},
+    }};
+    
+    
     glEnable(GL_DEPTH_TEST);
     // Rendu à chaque frame
     while (gl::window_is_open()) {
-        glClearColor(0.2, 0.2, 0.2,1.f); // Couleur de fond
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Vient remplacer glClear(GL_COLOR_BUFFER_BIT); 
-        shader.bind();; // On a besoin qu'un shader soit bind (i.e. "actif") avant de draw().
-        //shader.set_uniform("aspect_ratio", gl::framebuffer_aspect_ratio());
-        //shader.set_uniform("displacement", glm::vec2{cos(gl::time_in_seconds()), sin(gl::time_in_seconds())});
-        glm::mat4 const view_matrix = camera.view_matrix();
-        shader.set_uniform("view_projection_matrix", projection_matrix * view_matrix ); // * rotationTranslation
-        shader.set_uniform("my_texture", texture);
-        rectangle_mesh.draw();
+        render_target.render([&]() {
+            glClearColor(0.2, 0.2, 0.2,1.f); // Couleur de fond
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Vient remplacer glClear(GL_COLOR_BUFFER_BIT); 
+            shader.bind();; // On a besoin qu'un shader soit bind (i.e. "actif") avant de draw().
+            //shader.set_uniform("aspect_ratio", gl::framebuffer_aspect_ratio());
+            //shader.set_uniform("displacement", glm::vec2{cos(gl::time_in_seconds()), sin(gl::time_in_seconds())});
+            glm::mat4 const view_matrix = camera.view_matrix();
+            glm::mat4 const projection_matrix =
+                    glm::infinitePerspective(2.f /*field of view in radians*/,
+                                             gl::framebuffer_aspect_ratio() /*aspect ratio*/,
+                                             0.001f /*near plane*/);
+        
+            shader.set_uniform("view_projection_matrix", projection_matrix * view_matrix ); // * rotationTranslation
+            shader.set_uniform("my_texture", texture);
+            rectangle_mesh.draw();
+        });
+        
+       shaderPostProcess.bind();
+       postProcess.draw();
+       shaderPostProcess.set_uniform("image_rendered", render_target.color_texture(0)); // * rotationTranslation
+       glClear( GL_DEPTH_BUFFER_BIT);
     }
 }

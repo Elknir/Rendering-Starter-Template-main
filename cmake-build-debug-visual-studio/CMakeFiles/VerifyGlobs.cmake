@@ -45,6 +45,8 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/ElknirPrograms/Saves/ICAN/
 set(OLD_GLOB
   "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/.gitkeep"
   "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/fragment.glsl"
+  "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_fragment.glsl"
+  "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_vertex.glsl"
   "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/texture.png"
   "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/vertex.glsl"
   )

@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-
 #############################################
 # Order-only phony target for TPs-Rendering
 
-build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 timestamp_2a2ac6ad95dc7061c2625b431bb20079 timestamp_854d03edc8e85dece913887cf911a0d3 timestamp_897c5761b45da5dbb76445146109d2e8
+build cmake_object_order_depends_target_TPs-Rendering: phony || cmake_object_order_depends_target_exe_path cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_img cmake_object_order_depends_target_opengl_framework cmake_object_order_depends_target_stb_image timestamp_0cdfc12f51cd0c0fa4d6bb78fbf576e4 timestamp_2a2ac6ad95dc7061c2625b431bb20079 timestamp_854d03edc8e85dece913887cf911a0d3 timestamp_897c5761b45da5dbb76445146109d2e8 timestamp_b18aa3bda0b368d2f0a7994b0ea14e8b timestamp_d171256d9442eac6dcc1b7781cfe046e
 
 build CMakeFiles\TPs-Rendering.dir\src\main.cpp.obj: CXX_COMPILER__TPs-Rendering_unscanned_Debug C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\src\main.cpp || cmake_object_order_depends_target_TPs-Rendering
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
@@ -146,6 +146,24 @@ build timestamp_2a2ac6ad95dc7061c2625b431bb20079 | ${cmake_ninja_workdir}timesta
 build timestamp_854d03edc8e85dece913887cf911a0d3 | ${cmake_ninja_workdir}timestamp_854d03edc8e85dece913887cf911a0d3: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
   COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_854d03edc8e85dece913887cf911a0d3 && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/fragment.glsl C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/fragment.glsl"
   DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/fragment.glsl" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/fragment.glsl"
+  restat = 1
+
+
+#############################################
+# Custom command for timestamp_d171256d9442eac6dcc1b7781cfe046e
+
+build timestamp_d171256d9442eac6dcc1b7781cfe046e | ${cmake_ninja_workdir}timestamp_d171256d9442eac6dcc1b7781cfe046e: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\post_process_fragment.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_d171256d9442eac6dcc1b7781cfe046e && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_fragment.glsl C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/post_process_fragment.glsl"
+  DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_fragment.glsl" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/post_process_fragment.glsl"
+  restat = 1
+
+
+#############################################
+# Custom command for timestamp_b18aa3bda0b368d2f0a7994b0ea14e8b
+
+build timestamp_b18aa3bda0b368d2f0a7994b0ea14e8b | ${cmake_ninja_workdir}timestamp_b18aa3bda0b368d2f0a7994b0ea14e8b: CUSTOM_COMMAND C$:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\res\post_process_vertex.glsl || opengl-framework\glad.lib opengl-framework\lib\exe_path\exe_path.lib opengl-framework\lib\glfw\src\glfw3.lib opengl-framework\lib\img\img.lib opengl-framework\lib\img\stb_image.lib opengl-framework\opengl_framework.lib
+  COMMAND = C:\windows\system32\cmd.exe /C "cd /D C:\ElknirPrograms\Saves\ICAN\Rendering\Rendering-Starter-Template-main\Rendering-Starter-Template-main\cmake-build-debug-visual-studio && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch timestamp_b18aa3bda0b368d2f0a7994b0ea14e8b && C:\ElknirPrograms\LogicielsTravail\JetBrains\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_vertex.glsl C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/post_process_vertex.glsl"
+  DESC = Copying "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/res/post_process_vertex.glsl" to "C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/cmake-build-debug-visual-studio/res/post_process_vertex.glsl"
   restat = 1
 
 
