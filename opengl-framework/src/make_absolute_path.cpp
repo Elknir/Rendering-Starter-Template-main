@@ -1,5 +1,6 @@
 #include "make_absolute_path.hpp"
 #include <filesystem>
+#include <format>
 #include "exe_path/exe_path.h"
 #include "handle_error.hpp"
 

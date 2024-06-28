@@ -1,5 +1,6 @@
 #include "RenderTarget.hpp"
 #include <array>
+#include <format>
 #include "Texture.hpp"
 #include "handle_error.hpp"
 

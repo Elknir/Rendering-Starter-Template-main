@@ -1,6 +1,8 @@
 #include "Shader.hpp"
 #include <cassert>
 #include <fstream>
+#include <vector>
+#include <format>
 #include "Texture.hpp"
 #include "glm/gtc/type_ptr.hpp"
 #include "handle_error.hpp"

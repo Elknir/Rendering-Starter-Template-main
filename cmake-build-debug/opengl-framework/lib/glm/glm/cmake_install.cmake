@@ -1,4 +1,4 @@
-# Install script for directory: C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/glm/glm
+# Install script for directory: C:/ElknirPrograms/Saves/ICAN/Rendering/Rendering-Starter-Template-main/Rendering-Starter-Template-main/Rendering-Starter-Template-main/opengl-framework/lib/glm/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
